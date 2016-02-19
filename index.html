@@ -14,8 +14,12 @@
     
   <nav>
     <h1>BlankSpace</h1>
+    <h6>Sarah Kwan</h6>
+    <h6>Ryan Montgomery</h6>
+    <h6>Junha Shin</h6>
     <a href="#concept"><p>Concept</p></a>
     <a href="#motive"><p>Motivation</p></a>
+    <a href="#competition"><p>Competitive Analysis</p></a>
     <a href="#techspecs"><p>Technical specifications</p></a>
     <a href="#req"><p>Requirements</p></a>
     <a href="#risks"><p>Risks &amp; mitigation strategies</p></a>
@@ -36,13 +40,67 @@
     <h2 id="motive">Motivation</h2>
   </header>
   <article>
-    <p>The motivation for this project comes from the idea that as students look for places to study and do work, they often waste a huge chunk of time searching for available space that can both accommodate them as well as a quiet space that is conducive to studying. Imagine a typical snowy winter in Pittsburgh where there are icy sidewalks and cold wind that makes people regret leaving their apartments. Students like us have to trek through this harsh environment to go from one side of campus to another to find a shelter where they feel safe to study. Let’s say a student is just coming out of their typical 18-549 Monday lecture, and walks over to Sorrels Library to study. Ten minutes go by and once he arrives at wean library, he finds out that it’s packed. He then treks over to Hunt Library and searches all four floors to finally find a seat next to rowdy strangers debating about who's algorithm runs faster. He tries to begin studying, but then realizes that a whole thirty minutes went by.</p>
+    <p>Students often waste a lot of time searching for a place to work. BlankSpace will enable students to quickly check space availability without actually needing to visit the space.</p>
+  </article>
+</section>
+<section>
+  <header>
+    <h2 id="competition">Competitive analysis</h2>
+  </header>
+  <article>
+    <header>
+      <h5>Rita</h5>
+    </header>
+    <p>Rita is another 18-549 project. They also want to determine in real time whether a space is too crowded or noisy. They are using Kinect, accelerometers, Grid-Eye, and ambient noise sensors and placed around the room to identify the conditions within. Their installation requirements are much more intensive than ours, i.e. sensors on each chair. Our projects differ significantly in the types of sensors used, as well as the centralized nature of our system.</p>
+  </article>
+  <article>
+    <header>
+      <h5>Asure Software</h5>
+    </header>
+    <p><a href="http://www.asuresoftware.com/products/space-utilization/" target="_blank">Asure Software</a> combats a common problem in the workplace where often times a lot of desk and workspace is not utilized efficiently. Asure Software uses sensors to find free space as well as helps the user use their space more efficiently. This project is similar to our project, but it pertains to a different problem space as Asure Software focuses more on objects rather than people.  Asure accomplishes this using many different types of sensors that get placed on surfaces.</p>
+  </article>
+  <article>
+    <header>
+      <h5>OccupEye</h5>
+    </header>
+    <p><a href="http://www.occupeye.com/" target="_blank">OccupEye</a> is used to increase efficiency through space utilization. OccupEye is similar to Asure Software, but it also is able to detect the presence of people. This project is similar to our project, but it pertains to a different problem space as OccupEye focuses more on objects rather than people.</p>
   </article>
 </section>
 <section>
   <header>
     <h2 id="techspecs">Technical specifications</h2>
   </header>
+  <article>
+    <header>
+      <h5>Hardware</h5>
+    </header>
+    <h6>FLIR Lepton thermal camera</h6>
+    <p>A 160&times;160px thermal camera.</p>
+    <a href="http://www.digikey.com/product-detail/en/500-0659-01/500-0659-01-ND/5215153" target="_blank"><p>$183</p></a>
+    <h6>UDOO</h6>
+    <p>A powerful miniature computer (approximately equivalent to four Raspberry Pi units) with built-in Wi-fi and Bluetooth LE.</p>
+    <a href="http://shop.udoo.org/usa/home/udoo-neo-extended.html" target="_blank"><p>$60</p></a>
+  </article>
+  <article>
+    <header>
+      <h5>Software</h5>
+    </header>
+    <h6>Google App Engine</h6>
+    <p>Platform as a service. <a href="https://cloud.google.com/appengine/docs" target="_blank">Link.</a></p>
+  </article>
+  <article>
+    <header>
+      <h5>Protocols</h5>
+    </header>
+    <h6>Bluetooth Low-Energy</h6>
+    <p>A low-power communication standard for embedded devices.</p>
+    <h6>Wi-fi</h6>
+    <p>A more power-hungry standard, but very common for local area networks.</p>
+    <h6>I<sup>2</sup>C</h6>
+    <p>A common serial protocol for embedded systems.</p>
+    <h6>SPI</h6>
+    <p>Another common serial protocol for embedded systems.</p>
+  </article>
 </section>
 <section>
   <header>
