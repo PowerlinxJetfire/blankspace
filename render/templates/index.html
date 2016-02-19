@@ -1,17 +1,6 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.1/material.indigo-pink.min.css">
-    <script defer src="https://code.getmdl.io/1.1.1/material.min.js"></script>
-    <link rel="stylesheet" href="/static/css/style.css">
-    <title>BlankSpace
-</title>
-  </head>
-  <body>
-    
+{% extends "base.html" %}
+
+{% block nav %}
   <nav>
     <h1>BlankSpace</h1>
     <a href="#concept"><p>Concept</p></a>
@@ -21,8 +10,8 @@
     <a href="#risks"><p>Risks &amp; mitigation strategies</p></a>
     <a href="#prez"><p>Presentations</p></a>
   </nav>
-
-    
+{% endblock nav %}
+{% block content %}
 <section>
   <header>
     <h2 id="concept">Concept</h2>
@@ -107,6 +96,4 @@
     <p>We presented our initial idea for the class, professor, and TAs.<p>
     <a href="https://docs.google.com/presentation/d/1ZRWzEuQkOz4JGcIodDWogdqgMvTkJ1RwPD93M4zhoII/edit?usp=sharing" target="_blank"><p>Google Slides</p></a>
 </section>
-
-  </body>
-</html>
+{% endblock content %}
