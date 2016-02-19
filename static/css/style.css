@@ -3,3 +3,7 @@ body {
   margin: auto;
   padding: 16px;
 }
+
+section:not(:last-child) {
+  margin-bottom: 64px;
+}
